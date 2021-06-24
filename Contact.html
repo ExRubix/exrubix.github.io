@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="banner">
+            <header><h1><strong>SYAHMI SYAZWAN</strong></h1></header>
+            <h3 class="header">Developer • Gamer</h3>
+            <div class="center">
+              <img src="source\Social Bar.png" alt="Social Media" id="social-bar">
+            </div>
+        </div>   
+          <img id="profile" src="source\Profile Pict.jpg" alt="profile">    
+            <nav class="navigation">
+              <a href="index.html">ABOUT ME</a>
+              <a href="Achievement.html">ACHIEVEMENT</a>
+              <a href="Contact.html">CONTACT</a>
+            </nav>
+            <hr>
+        <div class="contact">
+            <h1>CONTACT</h1>
+            <div id="left">
+                <h2>ADDRESS</h2>
+                <p>Lot 2297, Jalan Hospital, Taman Peradang,<br>
+                15200, Kota Bharu, Kelantan</p>
+            </div>
+            <div id="center">
+                <h2>E-MAIL</h2>
+                <p>syahmimuhd30@gmail.com</p>
+            </div>
+            <div id="right">
+                <h2>PHONE</h2>
+                <p>+6019-909 3725</p>
+            </div>
+        </div>
+        <hr style="width: 1250px;">
+        <div class="contact-form">
+            <form action="#" method="POST" onsubmit="return checkforblank()">
+                <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <div>
+                    <label for="status">Select your status:</label>
+                    <input type="radio" name="status" id="student" value="student">
+                    <label for="student" class="cls">Student</label>
+                    <input type="radio" name="status" id="employee" value="employee">
+                    <label for="employee" class="cls">Employee</label>
+                </div>
+                <label for="budget">Budget:</label>
+                <select name="budget" id="budget">
+                    <option value="100-200">RM100 - RM200</option>
+                    <option value="300-400">RM300 - RM400</option>
+                    <option value="500-600">RM500 - RM600</option>
+                    <option value="700-800">RM700 - RM800</option>
+                    <option value="900-1000">RM900 - RM1000</option>
+                </select>
+                <div>
+                    <label for="skill">Skill needed:</label>
+                    <div class="col" style="margin-left: 200px;">
+                        <input type="checkbox" value="C++" name="skill" id="C++">
+                        <label for="C++" class="cls">C++</label>
+                        <input type="checkbox" value="Java" name="skill" id="Java">
+                        <label for="Java" class="cls">Java</label>
+                        <input type="checkbox" value="HTML" name="skill" id="HTML">
+                        <label for="HTML" class="cls">HTML</label>
+                        <input type="checkbox" value="CSS" name="skill" id="CSS">
+                        <label for="CSS" class="cls">CSS</label>
+                        <input type="checkbox" value="Python" name="skill" id="Python" s>
+                        <label for="Python" class="cls">Python</label>
+                        <input type="checkbox" value="JavaScript" name="skill" id="JavaScript">
+                        <label for="JavaScript" class="cls">JavaScript</label>
+                    </div>
+                </div>
+                <label for="detail">Project Details:</label>
+                <textarea name="detail" id="detail" cols="100" rows="10"></textarea>
+                </fieldset> 
+                </div>
+                <div class="buttonCenter">
+                    <input type="submit" value="Submit" class="button">
+                </div>
+            </form>
+    </body>
+</html>
